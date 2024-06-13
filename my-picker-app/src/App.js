@@ -13,12 +13,12 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <h1>Icon Picker</h1>
+      <h1 id="picker">Icon Picker</h1>
       <div
         className="selected-icon-container"
         onClick={() => setIconPickerOpen(true)}
       >
-        {selectedIcon ? <i data-feather={selectedIcon}></i> : 'Click to pick an icon'}
+        {selectedIcon ? <i data-feather={selectedIcon}></i> : 'Select App Icon'}
       </div>
       {iconPickerOpen && (
         <IconPicker
