@@ -1,0 +1,98 @@
+.icon-picker-container {
+    border: 2px solid #007bff; /* Primary color */
+    overflow: auto;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icons-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  .icon-item {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .icon-item i {
+    font-size: 24px;
+    color: #007bff; /* Primary color */
+  }
+  
+  .icon-item.selected {
+    border-color: #007bff; /* Primary color */
+  }
+  
+  .icon-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .page-btn {
+    background-color: #007bff; /* Primary color */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 4px;
+  }
+  
+  .page-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .page-number {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .action-btn {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancel-btn {
+    background-color: #dc3545; /* Red color for cancel button */
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .done-btn {
+    background-color: #007bff; /* Primary color for done button */
+    color: #fff;
+  }
+  
+  .action-btn:hover {
+    opacity: 0.8;
+  }
+  
